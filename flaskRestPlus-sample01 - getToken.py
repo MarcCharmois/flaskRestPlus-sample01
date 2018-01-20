@@ -5,7 +5,7 @@ app = Flask(__name__)                  #  Create a Flask WSGI appliction
 api = Api(app)                         #  Create a Flask-RESTPlus API
 
 @api.route('/token')                   #  Create a URL route to this resource
-class HelloWorld(Resource):            #  Create a RESTful resource
+class Token(Resource):            #  Create a RESTful resource
     def get(self):                     #  Create GET endpoint
         return {'token': 'gerg51-1s51fv-561dvsvd-fvkiy1d15d'}
 
